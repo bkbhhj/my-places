@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  my places
 //
-//  Created by Павел Тимофеев on 05.04.2022.
+//  Created by Павел Тимофеев on 08.04.2022.
 //
 
 import UIKit
