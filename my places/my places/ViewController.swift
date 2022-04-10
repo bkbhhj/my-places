@@ -40,10 +40,22 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
        
         cell?.textLabel?.text = restarantNames[indexPath.row]
-     cell?.imageView?.image = UIImage(named: restarantNames[indexPath.row])
+        cell?.imageView?.image = UIImage(named: restarantNames[indexPath.row])
+        cell?.imageView?.layer.cornerRadius = (cell?.frame.size.height ?? 80) / 2
+        cell?.imageView?.clipsToBounds = true
+        
+        
         return cell!
     }
  
-     
+     // MARK: Table view delegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+
+    }
+
+
+
 }
 
