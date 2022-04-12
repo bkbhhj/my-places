@@ -16,6 +16,7 @@
 		E9550FF82800887800FABF39 /* my_placesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9550FF72800887800FABF39 /* my_placesTests.swift */; };
 		E95510022800887800FABF39 /* my_placesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95510012800887800FABF39 /* my_placesUITests.swift */; };
 		E95510042800887800FABF39 /* my_placesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95510032800887800FABF39 /* my_placesUITestsLaunchTests.swift */; };
+		E9D8D64E2803379300766EF8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8D64D2803379300766EF8 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E9550FFD2800887800FABF39 /* my placesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "my placesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95510012800887800FABF39 /* my_placesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_placesUITests.swift; sourceTree = "<group>"; };
 		E95510032800887800FABF39 /* my_placesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_placesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9D8D64D2803379300766EF8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E9550FE02800887700FABF39 /* AppDelegate.swift */,
 				E9550FE22800887700FABF39 /* SceneDelegate.swift */,
 				E9550FE42800887700FABF39 /* ViewController.swift */,
+				E9D8D64D2803379300766EF8 /* CustomTableViewCell.swift */,
 				E9550FE62800887700FABF39 /* Main.storyboard */,
 				E9550FE92800887800FABF39 /* Assets.xcassets */,
 				E9550FEB2800887800FABF39 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				E9550FE52800887700FABF39 /* ViewController.swift in Sources */,
 				E9550FE12800887700FABF39 /* AppDelegate.swift in Sources */,
+				E9D8D64E2803379300766EF8 /* CustomTableViewCell.swift in Sources */,
 				E9550FE32800887700FABF39 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
