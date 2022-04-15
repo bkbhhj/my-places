@@ -8,15 +8,24 @@
 import UIKit
 
 class NewPlaceViewController: UITableViewController {
-
-    @IBOutlet weak var imagePlace: UIImageView!
+    
+    var newPlace: Place?
+    var imageisChanged = false
   
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var placeImage: UIImageView!
+    @IBOutlet weak var placeName: UITextField!
+    @IBOutlet weak var placeLocation: UITextField!
+    @IBOutlet weak var placeType: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.tableFooterView = UIView()
+        saveButton.isEnabled = false
         
+        placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -61,6 +70,29 @@ class NewPlaceViewController: UITableViewController {
         }
     }
   
+    
+    func saveNewPlace() {
+        var image: UIImage?
+        
+        if imageisChanged {
+            image = placeImage.image
+        } else {
+            image = UIImage(named: "imagePlaceholder")
+        }
+        
+        newPlace = Place(name: placeName.text!,
+                         location: placeLocation.text,
+                         type: placeType.text,
+                         image: image,
+                         restaurantImage: nil)
+    }
+    
+    @IBAction func cancelAction(_ sender: UIBarButtonItem) {
+    
+        dismiss(animated: true)
+    
+    }
+    
 }
 
 
@@ -75,6 +107,13 @@ class NewPlaceViewController: UITableViewController {
         return true
     }
 
+         @objc private func textFieldChanged() {
+             if placeName.text?.isEmpty == false {
+                 saveButton.isEnabled = true
+             } else {
+                 saveButton.isEnabled = false
+             }
+         }
 
 }
 // MARK: Work with image
@@ -95,9 +134,11 @@ extension NewPlaceViewController: UIImagePickerControllerDelegate, UINavigationC
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        imagePlace.image = info[.editedImage] as? UIImage
-        imagePlace.contentMode = .scaleToFill
-        imagePlace.clipsToBounds = true
+        placeImage.image = info[.editedImage] as? UIImage
+        placeImage.contentMode = .scaleToFill
+        placeImage.clipsToBounds = true
+        
+        imageisChanged = true
         dismiss(animated: true)
         
     }
