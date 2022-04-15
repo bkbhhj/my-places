@@ -17,6 +17,10 @@
 		E95510022800887800FABF39 /* my_placesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95510012800887800FABF39 /* my_placesUITests.swift */; };
 		E95510042800887800FABF39 /* my_placesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95510032800887800FABF39 /* my_placesUITestsLaunchTests.swift */; };
 		E9D8D64E2803379300766EF8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8D64D2803379300766EF8 /* CustomTableViewCell.swift */; };
+		E9EB1AFB2805EF5600C619B5 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB1AFA2805EF5600C619B5 /* PlaceModel.swift */; };
+		E9EB1AFD280925BF00C619B5 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB1AFC280925BF00C619B5 /* NewPlaceViewController.swift */; };
+		E9EB1AFE280925BF00C619B5 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB1AFC280925BF00C619B5 /* NewPlaceViewController.swift */; };
+		E9EB1AFF280925BF00C619B5 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EB1AFC280925BF00C619B5 /* NewPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,8 @@
 		E95510012800887800FABF39 /* my_placesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_placesUITests.swift; sourceTree = "<group>"; };
 		E95510032800887800FABF39 /* my_placesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_placesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E9D8D64D2803379300766EF8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E9EB1AFA2805EF5600C619B5 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		E9EB1AFC280925BF00C619B5 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,9 @@
 				E9550FE22800887700FABF39 /* SceneDelegate.swift */,
 				E9550FE42800887700FABF39 /* ViewController.swift */,
 				E9D8D64D2803379300766EF8 /* CustomTableViewCell.swift */,
+				E9EB1AFA2805EF5600C619B5 /* PlaceModel.swift */,
 				E9550FE62800887700FABF39 /* Main.storyboard */,
+				E9EB1AFC280925BF00C619B5 /* NewPlaceViewController.swift */,
 				E9550FE92800887800FABF39 /* Assets.xcassets */,
 				E9550FEB2800887800FABF39 /* LaunchScreen.storyboard */,
 				E9550FEE2800887800FABF39 /* Info.plist */,
@@ -262,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9550FE52800887700FABF39 /* ViewController.swift in Sources */,
+				E9EB1AFD280925BF00C619B5 /* NewPlaceViewController.swift in Sources */,
 				E9550FE12800887700FABF39 /* AppDelegate.swift in Sources */,
+				E9EB1AFB2805EF5600C619B5 /* PlaceModel.swift in Sources */,
 				E9D8D64E2803379300766EF8 /* CustomTableViewCell.swift in Sources */,
 				E9550FE32800887700FABF39 /* SceneDelegate.swift in Sources */,
 			);
@@ -273,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9550FF82800887800FABF39 /* my_placesTests.swift in Sources */,
+				E9EB1AFE280925BF00C619B5 /* NewPlaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95510042800887800FABF39 /* my_placesUITestsLaunchTests.swift in Sources */,
+				E9EB1AFF280925BF00C619B5 /* NewPlaceViewController.swift in Sources */,
 				E95510022800887800FABF39 /* my_placesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,11 +455,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V55R9QXR75;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "my places/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,11 +484,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V55R9QXR75;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "my places/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
